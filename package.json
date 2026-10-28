@@ -1,0 +1,22 @@
+{
+  "name": "creator-audio-release-orchestrator",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx src/creator_audio_server.ts",
+    "example": "tsx src/example_release.ts",
+    "upload": "tsx src/upload_creator_audio.ts",
+    "test": "tsx --test test/release_decision.test.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "openai": "^5.0.0",
+    "zod": "^3.25.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsx": "^4.20.0",
+    "typescript": "^5.8.0"
+  }
+}
